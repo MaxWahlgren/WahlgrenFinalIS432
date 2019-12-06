@@ -7,6 +7,7 @@
     <title>Wahlgren Books</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="../Styles/Main.css">
     <link rel="stylesheet" type="text/css" href="../Styles/PreLogin.css">
 </head>
 <body class="WahlgrenYellow">

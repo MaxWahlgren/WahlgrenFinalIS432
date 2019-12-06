@@ -16,7 +16,7 @@ namespace WahlgrenFinalIS432.Pages
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Pages/Dashboard.aspx");
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
