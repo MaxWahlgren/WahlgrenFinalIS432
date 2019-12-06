@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WahlgrenFinalIS432.Pages
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Register : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,12 +16,12 @@ namespace WahlgrenFinalIS432.Pages
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Pages/Login.aspx");
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Pages/Register.aspx");
+
         }
     }
 }

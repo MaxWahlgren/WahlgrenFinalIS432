@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WahlgrenFinalIS432.Pages
 {
-    public partial class _default : System.Web.UI.Page
+    public partial class PreLogin : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Redirect("~/Pages/Login.aspx");
+
         }
     }
 }

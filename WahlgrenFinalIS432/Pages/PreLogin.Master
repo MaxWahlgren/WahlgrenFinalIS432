@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PreLogin.master.cs" Inherits="WahlgrenFinalIS432.Pages.PreLogin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Wahlgren Books</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="../Styles/PreLogin.css">
+</head>
+<body class="WahlgrenYellow">
+    <div class="WahlgrenTan WahlgrenDark">
+        <h1>Valley Studio</h1>
+        <h3>Welcome!</h3>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
