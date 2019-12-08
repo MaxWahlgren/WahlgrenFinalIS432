@@ -6,6 +6,36 @@ img{
     max-height: 400px;
 }
 
+.fa-book-open {
+    color: #383B20;
+}
+
+.btnOpenBook {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+a.btnOpenBook:hover {
+    color: inherit;
+    background-color: whitesmoke;
+    opacity: .9;
+}
+div.w3-display-container > div > button {
+    background-color: #E9AC2E;
+}
+div.w3-display-container > div > button:hover {
+    background-color: whitesmoke;
+}
+
 .imageContainer {
     width: 100%;
     height: 100%;

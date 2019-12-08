@@ -27,21 +27,27 @@
             <p>New Reads</p>
         </div>
 
-        <div class="w3-row w3-grayscale">
+        <div class="w3-row">
             <div class="w3-col l3 s6">
                 <div class="w3-container">
-                    <div class="imageContainer"></div>
-                    <p>
-                        Title<br>
-                        <b>Author</b>
-                    </p>
+                    <div class="w3-display-container">
+                        <div class="imageContainer"></div>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="btnOpenBook WahlgrenYellow">View  <i class="fas fa-book-open"></i></button>
+                        </div>
+                    </div>
+                    <p><b>Title</b></p>
+                    <p>Author</p>
                 </div>
                 <div class="w3-container">
-                    <div class="imageContainer"></div>
-                    <p>
-                        Title<br>
-                        <b>Author</b>
-                    </p>
+                    <div class="w3-display-container">
+                        <div class="imageContainer"></div>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="btnOpenBook WahlgrenYellow">View  <i class="fas fa-book-open"></i></button>
+                        </div>
+                    </div>
+                    <p><b>Title</b></p>
+                    <p>Author</p>
                 </div>
             </div>
 
@@ -50,59 +56,67 @@
                     <div class="w3-display-container">
                         <div class="imageContainer"></div>
                         <div class="w3-display-middle w3-display-hover">
-                            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            <button class="btnOpenBook WahlgrenYellow">View  <i class="fas fa-book-open"></i></button>
                         </div>
                     </div>
-                    <p>
-                        Title<br>
-                        <b>Author</b>
-                    </p>
-                </div>
-                <div class="w3-container">
-                    <div class="imageContainer"></div>
-                    <p>
-                        Title<br>
-                        <b>Author</b>
-                    </p>
-                </div>
-            </div>
-
-            <div class="w3-col l3 s6">
-                <div class="w3-container">
-                    <div class="imageContainer"></div>
-                    <p>
-                        Title<br>
-                        <b>Author</b>
-                    </p>
+                    <p><b>Title</b></p>
+                    <p>Author</p>
                 </div>
                 <div class="w3-container">
                     <div class="w3-display-container">
                         <div class="imageContainer"></div>
                         <div class="w3-display-middle w3-display-hover">
-                            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            <button class="btnOpenBook WahlgrenYellow">View  <i class="fas fa-book-open"></i></button>
                         </div>
                     </div>
-                    <p>
-                        Title<br>
-                        <b>Author</b>
-                    </p>
+                    <p><b>Title</b></p>
+                    <p>Author</p>
                 </div>
             </div>
 
             <div class="w3-col l3 s6">
                 <div class="w3-container">
-                    <div class="imageContainer"></div>
-                    <p>
-                        Title<br>
-                        <b>Author</b>
-                    </p>
+                    <div class="w3-display-container">
+                        <div class="imageContainer"></div>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="btnOpenBook WahlgrenYellow">View  <i class="fas fa-book-open"></i></button>
+                        </div>
+                    </div>
+                    <p><b>Title</b></p>
+                    <p>Author</p>
                 </div>
                 <div class="w3-container">
-                    <div class="imageContainer"></div>
-                    <p>
-                        Title<br>
-                        <b>Author</b>
-                    </p>
+                    <div class="w3-display-container">
+                        <div class="imageContainer"></div>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="btnOpenBook WahlgrenYellow">View  <i class="fas fa-book-open"></i></button>
+                        </div>
+                    </div>
+                    <p><b>Title</b></p>
+                    <p>Author</p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <div class="imageContainer"></div>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="btnOpenBook WahlgrenYellow">View  <i class="fas fa-book-open"></i></button>
+                        </div>
+                    </div>
+                    <p><b>Title</b></p>
+                    <p>Author</p>
+                </div>
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <div class="imageContainer"></div>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="btnOpenBook WahlgrenYellow">View  <i class="fas fa-book-open"></i></button>
+                        </div>
+                    </div>
+                    <p><b>Title</b></p>
+                    <p>Author</p>
                 </div>
             </div>
         </div>

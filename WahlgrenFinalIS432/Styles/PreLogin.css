@@ -1,5 +1,4 @@
-﻿/* Coded with love by Mutiullah Samim */
-body,
+﻿body,
 html {
     margin: 0;
     padding: 0;
@@ -7,7 +6,10 @@ html {
     background: #FBECCC !important;
 }
 
-/*userCard*/
+body, h1, h2, h3, h4, h5, h6, .w3-wide {
+    font-family: "Montserrat", sans-serif;
+}
+
 .preLoginCard {
     height: 400px;
     width: 350px;
@@ -18,13 +20,9 @@ html {
     justify-content: center;
     flex-direction: column;
     padding: 10px;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     border-radius: 5px;
 }
 
-/*.brand_logo_container {*/
 .logoContainer {
     position: absolute;
     height: 170px;
@@ -36,7 +34,6 @@ html {
     text-align: center;
 }
 
-/*.brand_logo {*/
 .logo {
     height: 150px;
     width: 150px;

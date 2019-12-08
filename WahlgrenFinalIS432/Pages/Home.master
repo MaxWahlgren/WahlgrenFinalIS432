@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Content/fontawesome-free-5.11.2-web/css/all.css">
     <link rel="stylesheet" href="../Styles/Main.css" />
     <link rel="stylesheet" href="../Styles/Home.css" />
 </head>
@@ -28,12 +28,12 @@
             <h3 class="w3-wide"><b>Valley Studio</b></h3>
         </div>
         <div class="w3-padding-64 w3-large WahlgrenDark sidebarContainer">
-            <a href="#MyLibrary" class="w3-bar-item w3-button">My Library</a>
-            <a href="#CreateBook" class="w3-bar-item w3-button">Add Book</a>
-            <a href="#PublicLibrary" class="w3-bar-item w3-button">Public Library</a>
+            <a href="#MyLibrary" class="w3-bar-item btnOpenBook">My Library</a>
+            <a href="#CreateBook" class="w3-bar-item btnOpenBook">Add Book</a>
+            <a href="#PublicLibrary" class="w3-bar-item btnOpenBook">Public Library</a>
         </div>
-        <a href="#Account" class="w3-bar-item w3-button w3-padding">Account</a>
-        <a href="#Logout" class="w3-bar-item w3-button w3-padding">Logout</a>
+        <a href="#Account" class="w3-bar-item btnOpenBook w3-padding">Account</a>
+        <a href="#Logout" class="w3-bar-item btnOpenBook w3-padding">Logout</a>
     </nav>
 
     <!-- Top menu on small screens -->
