@@ -1,5 +1,9 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PreLogin.master.cs" Inherits="WahlgrenFinalIS432.Pages.PreLogin" %>
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <!DOCTYPE html>
 
 <html>
@@ -9,13 +13,29 @@
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" type="text/css" href="../Styles/Main.css">
     <link rel="stylesheet" type="text/css" href="../Styles/PreLogin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <%--<script runat="server" src="~/Scripts/script.js"></script>--%>
 </head>
 <body class="WahlgrenYellow">
-    <div class="WahlgrenTan WahlgrenDark">
-        <h1>Valley Studio</h1>
-        <h3>Welcome!</h3>
-    </div>
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-    </asp:ContentPlaceHolder>
+
+    <div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="preLoginCard">
+				<div class="d-flex justify-content-center">
+					<div class="logoContainer">
+						<img src="../Images/logo.jpg" class="logo" alt="Logo">
+					</div>
+				</div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+			</div>
+		</div>
+	</div>
+    
 </body>
 </html>
+
+
+

@@ -13,5 +13,12 @@ namespace WahlgrenFinalIS432.Pages
         {
 
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+            authenticationManager.SignOut();
+            Response.Redirect("~/Pages/Login.aspx");
+        }
     }
 }
