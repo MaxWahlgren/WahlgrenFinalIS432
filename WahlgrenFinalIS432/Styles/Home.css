@@ -1,12 +1,18 @@
 ﻿body {
     margin-left: 0;
+    margin-right: 0;
+    padding-right: 0:
 }
 
 img{
     max-height: 400px;
 }
 
-.fa-book-open {
+
+.fa-book-reader, .fa-plus, .fa-user, .fa-sign-out-alt, .fa-database {
+    color: #E9AC2E;
+}
+.fa-book-open{
     color: #383B20;
 }
 
@@ -22,6 +28,58 @@ img{
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+}
+
+.wrapper {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+
+input.search {
+    background: #fff;
+    border: 0 none;
+    color: #807E7E;
+    float: left;
+    height: 38px;
+    line-height: 26px;
+    font-size: 14px;
+    margin: 0 0 0 12px;
+    outline: medium none;
+    padding: 6px 14px;
+    max-width: 500px;
+    border-radius: 2px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.6);
+    font-family: inherit;
+}
+
+.btnSearch {
+    color: rgba(0,0,0,.6);
+    background: #ebebeb;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: left;
+    height: 38px;
+    line-height: 46px;
+    max-width: 44px;
+    display: block;
+    margin-left: -2px;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 0 1px rgba(0,0,0,0.7);
+}
+
+.w3-container, .search, .links {
+    display: block !important;
+}
+
+.w3-container {
+    padding: 12px;
+}
+
+.links {
+    width: 100%;
+    float: right;
 }
 
 a.btnOpenBook:hover {
@@ -69,23 +127,21 @@ body, h1, h2, h3, h4, h5, h6, .w3-wide {
     font-weight: bold;
 }
 
-.btnSearch {
-    background-color: #704828 !important;
-}
-    .btnSearch:hover {
-        color: #4b270b;
-    }
 
 .btnHeader {
-    background-color: #648f54;
-    box-shadow: none !important;
-    padding: 10px 10px;
-    text-align: center;
-    height: auto;
-    font-weight: 500;
+    background-color: #648f54 !important;
+    float: right !important;
+    color: rgba(0,0,0,.6);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 38px;
+    line-height: 46px;
     width: auto;
-    display: inline-block;
-    color: white;
+    display: block;
+    margin-left: -2px;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 0 1px rgba(0,0,0,0.7);
 }
     .btnHeader:hover {
         color: #4b6242;
@@ -95,8 +151,8 @@ body, h1, h2, h3, h4, h5, h6, .w3-wide {
 .itemNumber {
     border-radius: 3px;
     background-color: rgba(0, 0, 0, .1);
-    height: 20px;
-    padding: 3px 6px;
+    height: auto;
+    padding: 2px;
     font-weight: 500;
     display: inline-block;
     color: white;
