@@ -224,7 +224,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Styles\Dashboard.css" />
+    <Content Include="Styles\Home.css" />
     <Content Include="Styles\Main.css" />
     <Content Include="Styles\PreLogin.css" />
     <Content Include="Web.config" />
