@@ -25,5 +25,10 @@ namespace WahlgrenFinalIS432.Pages
                 }
             }
         }
+
+        protected void btnViewBook_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/BookView.aspx");
+        }
     }
 }

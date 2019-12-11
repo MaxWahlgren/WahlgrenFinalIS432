@@ -6,7 +6,7 @@
 }
 
 .WahlgrenYellow {
-    background-color: #E9AC2E;
+    background-color: #E9AC2E !important;
 }
 
 .WahlgrenDark {
@@ -16,4 +16,12 @@
 .WahlgrenGray {
     background-color: #B7B096;
     color: #B7B096;
+}
+
+button > * {
+    pointer-events: none;
+}
+
+.iconWrapper {
+    padding: 4px;
 }

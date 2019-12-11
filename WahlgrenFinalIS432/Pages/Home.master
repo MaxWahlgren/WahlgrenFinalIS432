@@ -28,13 +28,13 @@
             <h3 class="w3-wide"><b>Valley Studio</b></h3>
         </div>
         <div class="w3-padding-64 w3-large WahlgrenDark sidebarContainer">
-            <a href="#MyLibrary" class="w3-bar-item btnOpenBook"><i class="fas fa-book-reader"></i> My Library</a>
-            <a href="#CreateBook" class="w3-bar-item btnOpenBook"><i class="fas fa-plus"></i> Add Book</a>
-            <a href="#PublicLibrary" class="w3-bar-item btnOpenBook"><i class="fas fa-database"></i> Public Library</a>
+            <a href="#ComingSoon" class="w3-bar-item btnOpenBook"><i class="fas fa-book-reader"></i> My Library</a>
+            <a href="#ComingSoon" class="w3-bar-item btnOpenBook"><i class="fas fa-plus"></i> Add Book</a>
+            <a href="#ComingSoon" class="w3-bar-item btnOpenBook"><i class="fas fa-database"></i> Public Library</a>
         
             <div class="wrapper">
-                <a href="#Account" class="w3-bar-item btnOpenBook w3-padding"><i class="fas fa-user"></i> Account</a>
-                <a href="#Logout" class="w3-bar-item btnOpenBook w3-padding"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <a href="#ComingSoon" class="w3-bar-item btnOpenBook w3-padding"><i class="fas fa-user"></i> Account</a>
+                <a href="#Logout" class="w3-bar-item btnOpenBook w3-padding" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
             </div>
         </div>
     </nav>
@@ -57,20 +57,23 @@
 
 
     <script>
-            // Click on the "Jeans" link on page load to open the accordion for demo purposes
-            document.getElementById("myBtn").click();
+        // Click on the "Jeans" link on page load to open the accordion for demo purposes
+        document.getElementById("myBtn").click();
 
+        function logout() {
+            
+        }
 
-            // Open and close sidebar
-            function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
-            }
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
-            function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
-            }
-        </script>
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
 </body>
 </html>

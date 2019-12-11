@@ -9,12 +9,14 @@ img{
 }
 
 
-.fa-book-reader, .fa-plus, .fa-user, .fa-sign-out-alt, .fa-database {
+.fa-book-reader, .fa-plus, .fa-user, .fa-sign-out-alt, .fa-database, fab fa-readme {
     color: #E9AC2E;
 }
 .fa-book-open{
     color: #383B20;
 }
+
+
 
 .btnOpenBook {
     border: none;
