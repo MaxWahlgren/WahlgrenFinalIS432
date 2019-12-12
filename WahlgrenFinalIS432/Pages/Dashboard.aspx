@@ -39,13 +39,13 @@
                         <div class="w3-container">
                             <div class="w3-display-container">
                                 <div class="imageContainer">
-                                    <asp:Image runat="server" ImageUrl='<%# Eval("ImgUrl", "~/{0}") %>' /> 
+                                    <asp:Image runat="server" ImageUrl='<%# Eval("ImgUrl", "~/Images/{0}") %>' /> 
                                 </div>
                                 <div class="w3-display-middle w3-display-hover">
                                     <div class="iconWrapper">
-                                        <asp:LinkButton ID="btnViewBook" runat="server" OnClick="btnViewBook_Click" CssClass="btnOpenBook WahlgrenYellow">
+                                        <asp:HyperLink runat="server" ID="btnViewBook" CssClass="btnOpenBook WahlgrenYellow" NavigateUrl='<%#Eval("BookId", "BookView.aspx?B={0}") %>'>
                                             View&nbsp&nbsp&nbsp<i class="fas fa-book-open"></i>
-                                        </asp:LinkButton>
+                                        </asp:HyperLink>
                                     </div>
                                 </div>
                             </div>

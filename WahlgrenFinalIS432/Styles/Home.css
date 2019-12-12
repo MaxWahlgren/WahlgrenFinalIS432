@@ -103,7 +103,17 @@ div.w3-display-container > div > button:hover {
     border: solid;
     border-width: 5px;
     border-color: #E9AC2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
 }
+
+    .imageContainer > * {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%
+    }
 
 div.w3-container > img {
     width: 100%;

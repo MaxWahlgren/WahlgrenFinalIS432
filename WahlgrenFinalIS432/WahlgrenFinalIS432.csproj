@@ -1699,8 +1699,11 @@
     <Content Include="Content\fontawesome-free-5.11.2-web\webfonts\fa-regular-400.svg" />
     <Content Include="Content\fontawesome-free-5.11.2-web\webfonts\fa-solid-900.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\dpdummies.jpg" />
     <Content Include="Images\geometricAlgebraForComputrer.jpg" />
     <Content Include="Images\logo.jpg" />
+    <Content Include="Images\powerpoint2002.jpg" />
+    <Content Include="Images\smsfhtf.jpg" />
     <Content Include="Pages\Dashboard.aspx" />
     <Content Include="Pages\default.aspx" />
     <Content Include="Pages\Login.aspx" />
@@ -1787,6 +1790,9 @@
     <Content Include="Content\fontawesome-free-5.11.2-web\webfonts\fa-solid-900.woff" />
     <Content Include="Content\fontawesome-free-5.11.2-web\webfonts\fa-solid-900.woff2" />
     <Content Include="Images\GeometricAlgebraforComputerGraphics.pdf" />
+    <Content Include="Images\SuccessfulMarketingStrategiesfor.pdf" />
+    <Content Include="Images\MicrosoftPowerPoint2002.pdf" />
+    <Content Include="Images\DigitalPhotographyAllInOne.pdf" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
