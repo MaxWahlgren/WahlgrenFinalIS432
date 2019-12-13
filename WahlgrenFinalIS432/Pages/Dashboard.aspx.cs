@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -15,9 +17,7 @@ namespace WahlgrenFinalIS432.Pages
             {
                 if (User.Identity.IsAuthenticated)
                 {
-                    //StatusText.Text = string.Format("Hello {0}!!", User.Identity.GetUserName());
-                    //LoginStatus.Visible = true;
-                    //LogoutButton.Visible = true;
+                    LoadMostRecentBooks();
                 }
                 else
                 {
@@ -26,9 +26,23 @@ namespace WahlgrenFinalIS432.Pages
             }
         }
 
-        protected void btnViewBook_Click(object sender, EventArgs e)
+        protected void btnFind_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Pages/BookView.aspx");
+            if (txtSearch.Text == "")
+            {
+                LoadMostRecentBooks();
+            }
+            else
+            {
+                Repeater1.DataSource = SqlDataSource2;
+                Repeater1.DataBind();
+            }
+        }
+
+        protected void LoadMostRecentBooks()
+        {
+            Repeater1.DataSource = SqlDataSource1;
+            Repeater1.DataBind();
         }
     }
 }

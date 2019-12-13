@@ -14,7 +14,7 @@
                     <div class="w3-row">
                         <div class="search iconWrapper">
                             <asp:TextBox runat="server" ID="txtSearch" Placeholder="Find a Book..." CssClass="form-control search"></asp:TextBox>
-                            <asp:LinkButton ID="btnFind" runat="server" CssClass="btnSearch"><i class="fa fa-search"></i></asp:LinkButton>
+                            <asp:LinkButton ID="btnFind" runat="server" CssClass="btnSearch" OnClick="btnFind_Click"><i class="fa fa-search"></i></asp:LinkButton>
                         </div>
                         <div class="iconWrapper">
                             <asp:LinkButton ID="btnCheckout" runat="server" CssClass="btnHeader">
@@ -27,6 +27,11 @@
 
             </header>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="getBookDataForDashboard" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="listBooksByTitle" SelectCommandType="StoredProcedure">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="txtSearch" Name="Title" PropertyName="Text" Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
             <div class="w3-container WahlgrenDark" id="announcements">
                 <p>New Reads
                 </p>
@@ -34,7 +39,7 @@
             
             <div class="w3-row">
                 <div class="w3-col l3 s6">
-                    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+                    <asp:Repeater ID="Repeater1" runat="server">
                         <ItemTemplate>
                         <div class="w3-container">
                             <div class="w3-display-container">
@@ -55,109 +60,6 @@
                         </div>
                         </ItemTemplate>
                     </asp:Repeater>
-                   <%-- <div class="w3-container">
-                        <div class="w3-display-container">
-                            <div class="imageContainer">
-                                <asp:Image runat="server" ImageUrl="" />
-                            </div>
-
-                            <div class="w3-display-middle w3-display-hover">
-                                <div class="iconWrapper">
-                                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="btnViewBook_Click" CssClass="btnOpenBook WahlgrenYellow">
-                                        View&nbsp&nbsp&nbsp<i class="fas fa-book-open"></i>
-                                    </asp:LinkButton>
-                                </div>
-                            </div>
-                        </div>
-                        <b><asp:Label ID="Label1" runat="server" Text="Title" /></b>
-                        <br />
-                        <asp:Label ID="Label2" runat="server" Text="Author"/>
-                    </div>
-
-                <div class="w3-col l3 s6">
-
-                    <div class="w3-container">
-                        <div class="w3-display-container">
-                            <div class="imageContainer"></div>
-                            <div class="w3-display-middle w3-display-hover">
-                                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="btnViewBook_Click" CssClass="btnOpenBook WahlgrenYellow">
-                                    View&nbsp&nbsp&nbsp<i class="fas fa-book-open"></i>
-                                </asp:LinkButton>
-                            </div>
-                        </div>
-                        <p><b>Title</b></p>
-                        <p>Author</p>
-                    </div>
-                    <div class="w3-container">
-                        <div class="w3-display-container">
-                            <div class="imageContainer"></div>
-                            <div class="w3-display-middle w3-display-hover">
-                                <asp:LinkButton ID="LinkButton3" runat="server" OnClick="btnViewBook_Click" CssClass="btnOpenBook WahlgrenYellow">
-                                    View&nbsp&nbsp&nbsp<i class="fas fa-book-open"></i>
-                                </asp:LinkButton>
-                            </div>
-                        </div>
-                        <p><b>Title</b></p>
-                        <p>Author</p>
-                    </div>
-                </div>
-
-                <div class="w3-col l3 s6">
-
-                    <div class="w3-container">
-                        <div class="w3-display-container">
-                            <div class="imageContainer"></div>
-                            <div class="w3-display-middle w3-display-hover">
-                                <asp:LinkButton ID="LinkButton4" runat="server" OnClick="btnViewBook_Click" CssClass="btnOpenBook WahlgrenYellow">
-                                    View&nbsp&nbsp&nbsp<i class="fas fa-book-open"></i>
-                                </asp:LinkButton>
-                            </div>
-                        </div>
-                        <p><b>Title</b></p>
-                        <p>Author</p>
-                    </div>
-
-                    <div class="w3-container">
-                        <div class="w3-display-container">
-                            <div class="imageContainer"></div>
-                            <div class="w3-display-middle w3-display-hover">
-                                <asp:LinkButton ID="LinkButton5" runat="server" OnClick="btnViewBook_Click" CssClass="btnOpenBook WahlgrenYellow">
-                                    View&nbsp&nbsp&nbsp<i class="fas fa-book-open"></i>
-                                </asp:LinkButton>
-                            </div>
-                        </div>
-                        <p><b>Title</b></p>
-                        <p>Author</p>
-                    </div>
-                </div>
-
-                <div class="w3-col l3 s6">
-
-                    <div class="w3-container">
-                        <div class="w3-display-container">
-                            <div class="imageContainer"></div>
-                            <div class="w3-display-middle w3-display-hover">
-                                <asp:LinkButton ID="LinkButton6" runat="server" OnClick="btnViewBook_Click" CssClass="btnOpenBook WahlgrenYellow">
-                                    View&nbsp&nbsp&nbsp<i class="fas fa-book-open"></i>
-                                </asp:LinkButton>
-                            </div>
-                        </div>
-                        <p><b>Title</b></p>
-                        <p>Author</p>
-                    </div>
-
-                    <div class="w3-container">
-                        <div class="w3-display-container">
-                            <div class="imageContainer"></div>
-                            <div class="w3-display-middle w3-display-hover">
-                                <asp:LinkButton ID="LinkButton7" runat="server" OnClick="btnViewBook_Click" CssClass="btnOpenBook WahlgrenYellow">
-                                    View&nbsp&nbsp&nbsp<i class="fas fa-book-open"></i>
-                                </asp:LinkButton>
-                            </div>
-                        </div>
-                        <p><b>Title</b></p>
-                        <p>Author</p>
-                    </div>--%>
                 </div>
             </div>
         </div>

@@ -58,7 +58,7 @@
                         <div class="w3-col l3 s6">
                             <div class="w3-container">
                                 <asp:LinkButton ID="btnReadBook" runat="server" OnClick="btnReadBook_Click" CssClass="btnOpenBook WahlgrenYellow">
-                                    Read&nbsp&nbsp<i class="fab fa-readme"></i>
+                                    Read&nbspNow&nbsp&nbsp<i class="fab fa-readme"></i>
                                 </asp:LinkButton>
                             </div>
                         </div>
